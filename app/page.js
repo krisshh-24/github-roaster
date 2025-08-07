@@ -69,7 +69,7 @@ export default function Home() {
             GITHUB UNFILTERED
           </h1>
           <p className="text-gray-400 text-lg">
-            Compare your GitHub profile with legendary developers
+            Compare your GitHub profile with other people but with a twist....
           </p>
         </div>
 
@@ -87,7 +87,7 @@ export default function Home() {
 
           {/* Influencer Selection */}
           <div className="space-y-2">
-            <Label className="text-gray-300">Select Master</Label>
+            <Label className="text-gray-300">Select Opponent</Label>
             <Select value={influencer} onValueChange={setInfluencer}>
               <SelectTrigger className="w-full bg-gray-900 border-gray-700 text-gray-100">
                 <SelectValue placeholder="Influencer" />
@@ -103,7 +103,7 @@ export default function Home() {
           {/* Custom Influencer Input */}
           {influencer === 'custom' && (
             <div className="space-y-2">
-              <Label className="text-gray-300">Enter Custom Influencer GitHub Username</Label>
+              <Label className="text-gray-300">Enter Custom GitHub Username</Label>
               <Input
                 placeholder="influencer-username"
                 value={customInfluencer}
@@ -119,7 +119,7 @@ export default function Home() {
             disabled={loading}
             className="w-full bg-gradient-to-r from-red-500 via-red-400 to-red-500 hover:scale-105  from-red-600 hover:to-red-600 text-white font-semibold py-3"
           >
-            {loading ? '🔥 Roasting...' : '🔥 Roast '}
+            {loading ? 'Comparing...' : 'Compare '}
           </Button>
         </div>
 
