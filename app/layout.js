@@ -9,7 +9,7 @@ const roboto = Roboto({
 
 
 export const metadata = {
-  title: "Git Critic",
+  title: "GU",
   description: "Compare your GitHub profile with the best of the best",
 };
 
